@@ -1,4 +1,5 @@
 import React from 'react'
+//import './Aos.css'
 //import newImage from './s2.png';
 
 function Discuss() {
