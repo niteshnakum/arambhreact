@@ -1,0 +1,32 @@
+/* Style.css */
+.header {
+    background-color: transparent; 
+    transition: background-color 0.5s ease; 
+  }
+  
+  .sticked {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+ /* Navbar.css */
+
+/* Default styling for navbar items */
+.navbar ul li a {
+    color: white; /* Set the default text color to black */
+  }
+  
+  /* Styling for navbar items after scrolling */
+  .header.sticked.sticky-menu .navbar ul li a {
+    color: black; /* Change text color to white when navbar is scrolled */
+  }
+  
+  .sticky-menu {
+    background-color: white; 
+  }
+  
+  
+  
