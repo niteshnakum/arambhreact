@@ -7,21 +7,28 @@ import './Glightboxmin.css';
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState('');
+  const [isScrolled, setScrolled] = useState(false);
+  const [isMobileNavVisible, setMobileNavVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const navbarLinks = document.querySelectorAll('#navbar a');
-      navbarLinks.forEach(navbarlink => {
-        const section = document.querySelector(navbarlink.hash);
-        if (!section) return;
+      setScrolled(window.scrollY > 0);
 
-        const position = window.scrollY + 200;
+      const position = window.scrollY + 200;
+      const navbarLinks = document.querySelectorAll('#navbar a');
+
+      navbarLinks.forEach(navbarlink => {
+        const hash = navbarlink.hash;
+        if (!hash) return;
+
+        const section = document.querySelector(hash);
+        if (!section) return;
 
         if (
           position >= section.offsetTop &&
           position <= section.offsetTop + section.offsetHeight
         ) {
-          setActiveLink(navbarlink.hash);
+          setActiveLink(hash);
         }
       });
     };
@@ -30,22 +37,19 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const [isScrolled, setScrolled] = useState(false);
+  const toggleMobileNav = () => {
+    setMobileNavVisible(!isMobileNavVisible);
+  };
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
+    const handleResize = () => {
+      if (window.innerWidth >= 992) {
+        setMobileNavVisible(false);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return (
@@ -54,16 +58,15 @@ const Navbar = () => {
         <a href="index.html" className="logo d-flex align-items-center">
           <h1>Arambh<span>Technologies</span></h1>
         </a>
-        <nav id="navbar" className="navbar">
+        <nav id="navbar" className={`navbar ${isMobileNavVisible ? 'navbar-mobile' : ''}`}>
           <ul>
-          <li><a href="#hero" className={activeLink === '#hero' ? 'active' : ''}>Home</a></li>
+            <li><a href="#hero" className={activeLink === '#hero' ? 'active' : ''}>Home</a></li>
             <li><a href="#services" className={activeLink === '#services' ? 'active' : ''}>Services</a></li>
             <li><a href="#about" className={activeLink === '#about' ? 'active' : ''}>About</a></li>
             <li><a href="#testimonials" className={activeLink === '#testimonials' ? 'active' : ''}>Testimonials</a></li>
             <li><a href="#team" className={activeLink === '#team' ? 'active' : ''}>Team</a></li>
             <li><a href="#faq" className={activeLink === '#faq' ? 'active' : ''}>FAQs</a></li>
             <li className="dropdown">
-              
               <a href="#"><span>Menu</span> <i className="bi bi-chevron-down dropdown-indicator"></i></a>
               <ul>
                 <li><a href="#">Pricing</a></li>
@@ -74,11 +77,9 @@ const Navbar = () => {
             </li>
             <li><a href="#news" className={activeLink === '#news' ? 'active' : ''}>News</a></li>
             <li><a href="#contact" className={activeLink === '#contact' ? 'active' : ''}>Contact</a></li>
-            
           </ul>
         </nav>
-        <i className="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-        <i className="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        <i className={`mobile-nav-toggle bi ${isMobileNavVisible ? 'bi-x' : 'bi-list'}`} onClick={toggleMobileNav}></i>
       </div>
     </header>
   );

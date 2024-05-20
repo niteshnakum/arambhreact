@@ -2,7 +2,8 @@ import React from 'react';
 
 const RecentPost = ({ category, title, author, date, imageSrc }) => {
   return (
-    <div className="col-lg-4">
+    
+    <div  className="col-lg-4">
       <article>
         <a href="#">
           <div className="post-img">
@@ -50,7 +51,7 @@ const RecentPostsSection = () => {
   ];
 
   return (
-    <section id="recent-posts" className="recent-posts sections-bg">
+    <section id="news" className="recent-posts sections-bg">
       <div className="container" data-aos="fade-up">
         <div className="section-header">
           <h2>Recent Blog Posts</h2>
