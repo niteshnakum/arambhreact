@@ -493,7 +493,7 @@
    @media (max-width: 1279px) {
     .navbar {
       position: fixed;
-      top: 0;
+      top: 76px;
       right: -100%;
       width: 100%;
       max-width: 400px;
@@ -854,7 +854,7 @@
   # Call To Action Section
   --------------------------------------------------------------*/
   .call-to-action {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../src/assets/images/cta-bg.jpg") center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./Discuss/cta-bg.jpg") center center;
     background-size: cover;
     padding: 150px 60px;
     border-radius: 0px;
@@ -1424,10 +1424,11 @@
   /*--------------------------------------------------------------
   # Hero Section
   --------------------------------------------------------------*/
+  /* ../src/assets/images/hero-bg.jpg */
   .hero {
     width: 100%;
     position: relative;
-    background: linear-gradient(rgb(30 30 30 / 68%), rgb(30 30 30 / 68%)), url(../src/assets/images/hero-bg.jpg) center center;
+    background: linear-gradient(rgb(30 30 30 / 68%), rgb(30 30 30 / 68%)), url(./HeroSection/hero-bg.jpg) center center;
     background-size: cover;
     padding: 60px 0 0 0;
     min-height: 650px;
@@ -1455,7 +1456,10 @@
   }
   
   .hero h3 {
+    font-size: 28px;
     color: #ffffff;
+    margin-bottom: 9px;
+    
   }
   
   .hero p {
@@ -2386,10 +2390,10 @@
   # Footer
   --------------------------------------------------------------*/
   
-  
+  /* ../src/assets/images/footer-bg.jpg */
   .footer-section {
     position: relative;
-    background: url(../src/assets/images/footer-bg.jpg) center center;
+    background: url(./Footer/footer-bg.jpg) center center;
     background-size: cover;
     border-radius: 0px;
     overflow: hidden;
