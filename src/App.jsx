@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState } from 'react'
 import Timer from './Timer';
 
@@ -12,16 +13,17 @@ import HeroSection from './Components/HeroSection/HeroSection';
 import WavesContainer from './Components/WavesContainer/WavesContainer';
 import ServicesSection from './Components/ServicesSection/ServicesSection';
 import About from './Components/About/About'
-//import Whyuse from './Components/Whyuse/Whyuse'
+import Whyuse from './Components/Whyuse/Whyuse'
 import Discuss from './Components/Discuss/Discuss'
 import Testimonials from './Components/Testimonials/Testimonials'
-import TeamSection from './Components/Teammember/Teammember';
-import FaqSection from './Components/FrequentlyAsked/FrequentlyAsked';
+//import TeamSection from './Components/Teammember/Teammember';
+//import FaqSection from './Components/FrequentlyAsked/FrequentlyAsked';
 import RecentProject from './Components/RecentProject/RecentProject';
 import ClientsSection from './Components/Clients/Clients';
-import DownloadAppPromo from './Components/Download/Download';
+//import DownloadAppPromo from './Components/Download/Download';
 import ContactSection from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
+// import PrivacyPolicy from './Components/PrivacyPolicy/PrivacyPolicy';
 
 
 
@@ -38,6 +40,17 @@ function App() {
   
   return (
     <>
+
+{/* <Router>
+      <div>
+        <Routes>
+          
+          <Route path="/privacy-policy" component={PrivacyPolicy} />
+          
+        </Routes>
+        <Footer />
+      </div>
+    </Router> */}
      
      <Timer></Timer>
      <Navbar></Navbar> 
@@ -45,14 +58,14 @@ function App() {
     <WavesContainer></WavesContainer>
     <ServicesSection></ServicesSection>
     <About></About>
-    {/* <Whyuse></Whyuse> */}
+     <Whyuse></Whyuse> 
     <Discuss></Discuss>
     <Testimonials />
-    <TeamSection></TeamSection>
-    <FaqSection></FaqSection>
+    {/* <TeamSection></TeamSection> */}
+    {/* <FaqSection></FaqSection> */}
     <RecentProject></RecentProject>
     <ClientsSection></ClientsSection> 
-    <DownloadAppPromo></DownloadAppPromo>
+    {/* <DownloadAppPromo></DownloadAppPromo> */}
     <ContactSection></ContactSection>
     <Footer></Footer>
       </>

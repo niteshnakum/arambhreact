@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '.././Bootstrap-icons.css'
+//import '.././Style.css';
 //import '.././Aos.css';
 
 const FaqItem = ({ question, answer, isOpen, toggleAccordion }) => {

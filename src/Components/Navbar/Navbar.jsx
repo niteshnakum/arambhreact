@@ -146,10 +146,10 @@ const Navbar = () => {
     }
   };
 
-  const handleDropdownToggle = (index, event) => {
-    event.preventDefault();
-    setActiveDropdown(activeDropdown === index ? null : index);
-  };
+  // const handleDropdownToggle = (index, event) => {
+  //   event.preventDefault();
+  //   setActiveDropdown(activeDropdown === index ? null : index);
+  // };
 
   useEffect(() => {
     const handleResize = () => {
@@ -175,9 +175,9 @@ const Navbar = () => {
              <li><a href="#services" onClick={() => handleLinkClick('#services')} className={activeLink === '#services' ? 'active' : ''}>Services</a></li>
              <li><a href="#about" onClick={() => handleLinkClick('#about')} className={activeLink === '#about' ? 'active' : ''}>About</a></li>
              <li><a href="#testimonials" onClick={() => handleLinkClick('#testimonials')} className={activeLink === '#testimonials' ? 'active' : ''}>Testimonials</a></li>
-             <li><a href="#team" onClick={() => handleLinkClick('#team')} className={activeLink === '#team' ? 'active' : ''}>Team</a></li>
-             <li><a href="#project" onClick={() => handleLinkClick('#project')} className={activeLink === '#project' ? 'active' : ''}>Project</a></li> 
-             <li><a href="#contact" onClick={() => handleLinkClick('#contact')} className={activeLink === '#contact' ? 'active' : ''}>Conatct</a></li>
+             {/* <li><a href="#team" onClick={() => handleLinkClick('#team')} className={activeLink === '#team' ? 'active' : ''}>Team</a></li> */}
+             <li><a href="#projects" onClick={() => handleLinkClick('#projects')} className={activeLink === '#projects' ? 'active' : ''}>Projects</a></li> 
+             <li><a href="#contact" onClick={() => handleLinkClick('#contact')} className={activeLink === '#contact' ? 'active' : ''}>Contact</a></li>
 
              {/* <li><a href="#faq" onClick={() => handleLinkClick('#faq')} className={activeLink === '#faq' ? 'active' : ''}>FAQs</a></li> */}
             {/* <li className="dropdown">

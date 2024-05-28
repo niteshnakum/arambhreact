@@ -5,7 +5,10 @@ const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    subject: '',
+    phone: '',
+    company: '',
+    services: '',
+    // subject: '',
     message: ''
   });
 
@@ -21,7 +24,10 @@ const ContactSection = () => {
     setFormData({
       name: '',
       email: '',
-      subject: '',
+      phone: '',
+      company: '',
+      services: '',
+      // subject: '',
       message: ''
     });
   };
@@ -30,7 +36,7 @@ const ContactSection = () => {
     <div id="contact" className="contact-section section">
       <div className="section-header">
         <h2>Contact Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <p><b>We’d like to connect with you!</b></p>
       </div>
       <div className="container">
         <div className="row">
@@ -41,8 +47,8 @@ const ContactSection = () => {
                   <div className="single-contact-info-box">
                     <div className="contact-info">
                       <h6>Address:</h6>
-                      <p>11 West Town</p>
-                      <p>PBo 12345, United States</p>
+                      <p>29 Vinayak Nagar 313001</p>
+                      <p>Udaipur, Rajasthan, India</p>
                     </div>
                   </div>
                 </div>
@@ -50,8 +56,8 @@ const ContactSection = () => {
                   <div className="single-contact-info-box">
                     <div className="contact-info">
                       <h6>Phone:</h6>
-                      <p>+1 1234 56 789</p>
-                      <p>+1 1234 56 780</p>
+                      <p>+7014935101</p>
+                      {/* <p>+1 1234 56 780</p> */}
                     </div>
                   </div>
                 </div>
@@ -59,8 +65,8 @@ const ContactSection = () => {
                   <div className="single-contact-info-box">
                     <div className="contact-info">
                       <h6>Email:</h6>
-                      <p>info@example.com</p>
-                      <p>email@example.com</p>
+                      <p>hello@arambh.tech</p>
+                      {/* <p>email@example.com</p> */}
                     </div>
                   </div>
                 </div>
@@ -75,26 +81,106 @@ const ContactSection = () => {
                     <div className="row">
                       <div className="col-md-6">
                         <div className="form-group form-input-box">
-                          <input type="text" className="form-control" id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Name*" required />
+                          <input 
+                            type="text" 
+                            className="form-control" 
+                            id="name" 
+                            name="name" 
+                            value={formData.name} 
+                            onChange={handleChange} 
+                            placeholder="Name*" 
+                            required 
+                          />
                         </div>
                       </div>
                       <div className="col-md-6">
                         <div className="form-group form-input-box">
-                          <input type="email" className="form-control" id="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email*" required />
+                          <input 
+                            type="email" 
+                            className="form-control" 
+                            id="email" 
+                            name="email" 
+                            value={formData.email} 
+                            onChange={handleChange} 
+                            placeholder="Email*" 
+                            required 
+                          />
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                        <div className="form-group form-input-box">
+                          <input 
+                            type="text" 
+                            className="form-control" 
+                            id="phone" 
+                            name="phone" 
+                            value={formData.phone} 
+                            onChange={handleChange} 
+                            placeholder="Phone*" 
+                            required 
+                          />
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                        <div className="form-group form-input-box">
+                          <input 
+                            type="text" 
+                            className="form-control" 
+                            id="company" 
+                            name="company" 
+                            value={formData.company} 
+                            onChange={handleChange} 
+                            placeholder="Company" 
+                          />
                         </div>
                       </div>
                       <div className="col-md-12">
                         <div className="form-group form-input-box">
-                          <input type="text" className="form-control" name="subject" value={formData.subject} onChange={handleChange} placeholder="Subject" required />
+                          <select 
+                            className="form-control" 
+                            id="services" 
+                            name="services" 
+                            value={formData.services} 
+                            onChange={handleChange} 
+                            required
+                          >
+                            <option value="" disabled>Select Services You Need*</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="SEO">SEO</option>
+                            <option value="Digital Marketing">Digital Marketing</option>
+                            {/* Add more options as needed */}
+                          </select>
+                        </div>
+                      </div>
+                      <div className="col-md-12">
+                        <div className="form-group form-input-box">
+                          {/* <input 
+                            type="text" 
+                            className="form-control" 
+                            name="subject" 
+                            value={formData.subject} 
+                            onChange={handleChange} 
+                            placeholder="Subject" 
+                            required 
+                          /> */}
                         </div>
                       </div>
                       <div className="col-12">
                         <div className="form-group form-input-box">
-                          <textarea className="form-control" id="message" name="message" value={formData.message} onChange={handleChange} rows="7" placeholder="Write Your Message*" required></textarea>
+                          <textarea 
+                            className="form-control" 
+                            id="message" 
+                            name="message" 
+                            value={formData.message} 
+                            onChange={handleChange} 
+                            rows="7" 
+                            placeholder="Tell us a little more about your business needs*" 
+                            required
+                          ></textarea>
                         </div>
                       </div>
                       <div className="col-md-12">
-                        <button type="submit">Send Message</button>
+                        <button type="submit">I'm In</button>
                       </div>
                       <div className="messages">
                         {/* Message display after form submission */}

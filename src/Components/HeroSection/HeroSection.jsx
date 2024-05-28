@@ -14,10 +14,13 @@ const HeroSection = () => {
           <div className="col-lg-12  order-lg-1 d-flex flex-column justify-content-center text-center caption">
             <h2>Arambh<span className="circle"> Technologies</span></h2>
             <h3>Begin With Innovation, Begin With Arambh</h3>
+            <p>Redefine the future of your business with Arambh. Experience skyrocketing business growth with your one-stop destination with our services. 
+               Want to know how we can help you achieve exponential growth with our services?
+             </p>
             <div className="d-flex justify-content-center">
-              <a href="#about" className="btn-get-started">Get Started</a>
+              {/* <a href="#about" className="btn-get-started">Get Started</a>
               <a href="https://youtu.be/ZV16ev0n9J8" className="glightbox btn-watch-video d-flex align-items-center"><i
-                  className="bi bi-play-circle"></i><span>Watch Video</span></a>
+                  className="bi bi-play-circle"></i><span>Watch Video</span></a> */}
             </div>
           </div>
         </div>

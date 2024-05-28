@@ -36,17 +36,17 @@ const Footer = () => {
                   <li><a href="index.html"><i className="bi bi-chevron-double-right"></i>Home</a></li>
                   <li><a href="about.html"><i className="bi bi-chevron-double-right"></i>About</a></li>
                   <li><a href="services.html"><i className="bi bi-chevron-double-right"></i>Services</a></li>
-                  <li><a href="portfolio.html"><i className="bi bi-chevron-double-right"></i>Portfolio</a></li>
+                  {/* <li><a href="portfolio.html"><i className="bi bi-chevron-double-right"></i>Portfolio</a></li> */}
                   <li><a href="testimonials.html"><i className="bi bi-chevron-double-right"></i>Testimonials</a></li>
                   <li><a href="contact.html"><i className="bi bi-chevron-double-right"></i>Contact</a></li>
-                  <li><a href="about.html"><i className="bi bi-chevron-double-right"></i>About us</a></li>
-                  <li><a href="packages.html"><i className="bi bi-chevron-double-right"></i>Pricing</a></li>
-                  <li><a href="faq.html"><i className="bi bi-chevron-double-right"></i>FAQs</a></li>
-                  <li><a href="coming-soon.html"><i className="bi bi-chevron-double-right"></i>Coming Soon!</a></li>
-                  <li><a href="blogs.html"><i className="bi bi-chevron-double-right"></i>Our News</a></li>
-                  <li><a href="services.html"><i className="bi bi-chevron-double-right"></i>Our Services</a></li>
-                  <li><a href="team.html"><i className="bi bi-chevron-double-right"></i>Our Team</a></li>
-                  <li><a href="packages.html"><i className="bi bi-chevron-double-right"></i>Packages</a></li>
+                  <li><a href="about.html"><i className="bi bi-chevron-double-right"></i>Projects</a></li>
+                  {/* <li><a href="packages.html"><i className="bi bi-chevron-double-right"></i>Pricing</a></li> */}
+                  {/* <li><a href="faq.html"><i className="bi bi-chevron-double-right"></i>FAQs</a></li> */}
+                  {/* <li><a href="coming-soon.html"><i className="bi bi-chevron-double-right"></i>Coming Soon!</a></li> */}
+                  {/* <li><a href="blogs.html"><i className="bi bi-chevron-double-right"></i>Our News</a></li> */}
+                  {/* <li><a href="services.html"><i className="bi bi-chevron-double-right"></i>Our Services</a></li> */}
+                  {/* <li><a href="team.html"><i className="bi bi-chevron-double-right"></i>Our Team</a></li> */}
+                  {/* <li><a href="packages.html"><i className="bi bi-chevron-double-right"></i>Packages</a></li> */}
                 </ul>
               </div>
             </div>
@@ -57,19 +57,19 @@ const Footer = () => {
                 </div>
                 <div className="contact-info">
                   <h6>Address:</h6>
-                  <p><i className="bi bi-geo-alt-fill"></i> 11 West Town, PBo 12345, United States</p>
+                  <p><i className="bi bi-geo-alt-fill"></i>29 vinayak nagar  313001, Udaipur, Rajasthan, India</p>
                   {/* Change 'Wall%20Street,%20NYC' with your own business name */}
-                  <p><a href="https://www.google.com/maps/dir//Wall%20Street,%20NYC" target="_blank">Get Directions</a></p>
+                  <p><a href="https://maps.app.goo.gl/TSjKCKQGVPE9wYxR9" target="_blank">Get Directions</a></p>
                 </div>
                 <div className="contact-info">
                   <h6>Phone:</h6>
-                  <p><i className="bi bi-telephone-fill"></i> +1 1234 56 789</p>
-                  <p><i className="bi bi-telephone-fill"></i> +1 1234 56 780</p>
+                  <p><i className="bi bi-telephone-fill"></i> +7014935101</p>
+                  {/* <p><i className="bi bi-telephone-fill"></i> +1 1234 56 780</p> */}
                 </div>
                 <div className="contact-info">
                   <h6>Email:</h6>
-                  <p><i className="bi bi-envelope-fill"></i> info@example.com</p>
-                  <p><i className="bi bi-envelope-fill"></i> email@example.com</p>
+                  <p><i className="bi bi-envelope-fill"></i> hello@arambh.tech</p>
+                  {/* <p><i className="bi bi-envelope-fill"></i> email@example.com</p> */}
                 </div>
               </div>
             </div>

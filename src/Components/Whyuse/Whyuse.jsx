@@ -13,10 +13,10 @@ function Whyuse() {
      <section id="whyus" className="about">
         <div className="container" data-aos="fade-up">
           <div className="section-header">
-            <h2>Why Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <h2>We are ready to help</h2>
+            <p><b>Connect with us and know how we can give 360 degree solutions to your business problems. Contact us today!</b></p>
             
-          </div>
+          {/* </div>
           <div className="row gy-4">
             <div className="col-lg-6">
               <div className="content ps-0 ps-lg-5">
@@ -42,7 +42,7 @@ function Whyuse() {
             </div>
             <div className="col-lg-6">
             <img src={newImage} className="img-fluid rounded-4 mb-4" alt="" />
-            </div>
+            </div> */}
           </div>
         </div>
       </section> 
