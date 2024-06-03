@@ -5,7 +5,7 @@ import '.././Bootstrap-icons.css'
 
 import '.././Glightboxmin.css'
 //import '.././Aos.css';
-import newImage from './s2.png';
+//import newImage from './s2.png';
 
 function Whyuse() {
   return (

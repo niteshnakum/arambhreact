@@ -1,0 +1,176 @@
+.privacy-policy-container {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .privacy-policy-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+  
+  .privacy-policy-container p {
+    margin-bottom: 16px;
+  }
+  
+  .privacy-policy-container h2 {
+    margin-top: 24px;
+    font-size: 1.5em;
+  }
+  
+  .privacy-policy-container a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .privacy-policy-container a:hover {
+    text-decoration: underline;
+  }
+  
+
+
+
+
+   
+
+   /* .privacy-policy-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .top-section {
+    background-color: #001f3f; 
+    color: white; 
+    padding: 20px;
+  }
+  
+  .left-section {
+    background-color: #fff9c4; 
+    padding: 20px;
+    width: 100%; 
+  }
+  
+  .privacy-policy-heading {
+    margin: 0;
+  }
+  
+  .content {
+    padding: 20px;
+  } */
+  
+  /* PrivacyPolicy.css */
+
+/* PrivacyPolicy.css */
+
+.privacy-policy-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px; /* Add margin to the top */
+  padding: 20px;
+}
+
+.top-section {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 20px;
+  background-color: #1E90FF; /* Powder blue color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Adjust height as needed */
+  background-image: url('./img-4.jpg'); /* Add your background image path */
+  background-size: cover; /* Ensure the background covers the entire area */
+  background-position: center; /* Center the background image */
+}
+
+.privacy-policy-heading {
+  color:white;
+  background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background to the text */
+  padding: 70px; /* Optional: Add padding around the text */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  font-size: 2em;
+  margin: 0;
+  padding: 20px ;
+}
+
+.left-section {
+  background-color: powderblue; /* Light yellow color */
+  padding: 20px;
+  flex-grow: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 20px;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.content a {
+  color: #007bff;
+  text-decoration: none;
+}
+.content a:hover {
+  text-decoration: underline;
+}
+
+
+.privacy-policy-card {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+}
+
+.privacy-policy-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire section */
+}
+
+.right-section {
+  flex: 2;
+  padding: 20px;
+  background: #fff;
+}
+
+.top-section {
+  margin-bottom: 20px;
+}
+
+.privacy-policy-heading {
+  margin: 0;
+  font-size: 2em;
+  text-align: left;
+}
+
+.content {
+  line-height: 1.6;
+}
+
+.content a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}

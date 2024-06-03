@@ -92,10 +92,10 @@ import '.././Style.css'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
-import newImage from './testimonial-1.jpg';
-import newImage2 from './testimonial-2.jpg';
-import newImage3 from './testimonial-3.jpg';
-import newImage4 from './testimonial-4.jpg';
+import newImage from './avatar.jpg';
+import newImage2 from './avatar2.jpg';
+import newImage3 from './avatar3.jpg';
+//import newImage4 from './testimonial-4.jpg';
 
 // TestimonialCard Component
 const TestimonialCard = ({ name, role, imageSrc, quote }) => {
@@ -158,29 +158,29 @@ const TestimonialsSection = () => {
         </div>
         <Slider {...settings}>
           <TestimonialCard
-            name="Jhone Doe"
-            role="CFO"
+            name="Prashant"
+            role="Innovquant"
             imageSrc={newImage}
-            quote="Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam."
+            quote="Absolutely amazed by how easily I was able to communicate with the team. My company needed website development and the whole process was meticulously designed. Liked it overall!"
           />
           <TestimonialCard
-            name="Afa Rose"
-            role="Web Designer"
+            name="Satish Garwal"
+            role="Aaronsoftech"
             imageSrc={newImage2}
-            quote="Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet."
+            quote="The attention to detail and commitment to quality were evident at every stage. Their team were not just developers; they were partners invested in the success of our app. They navigated challenges with ease, ensuring a smooth development journey.Thanks guys!"
           />
           <TestimonialCard
-            name="Keena Lara"
-            role="Store Owner"
+            name="Rahul Bajaj "
+            role="Saayash Consultancy"
             imageSrc={newImage3}
-            quote="Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis minim."
+            quote="I think what sets them apart is how receptive they were to feedback. If you're on the lookout for a designer who can transform your vision into a visually captivating and user-centric reality, they are the one. We're thrilled with the outcome and look forward to future partnerships!"
           />
-          <TestimonialCard
+          {/* <TestimonialCard
             name="Fizzi Brandon"
             role="Freelancer"
             imageSrc={newImage4}
             quote="Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis minim."
-          />
+          /> */}
         </Slider>
       </div>
     </section>
