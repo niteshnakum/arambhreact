@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 //import '.././Aos.css';
 import newImage1 from './blog-1.jpg';
 import newImage2 from './blog-2.jpg';
@@ -30,6 +31,9 @@ const RecentProject = ({ category, title, author, date, imageSrc }) => {
 }
 
 const RecentProjectSection = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const recentPosts = [
     {
       category: "Domain & Hosting",

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 import '.././Style.css'
 import '.././Bootstrapmin.css'
 import '.././Bootstrap-icons.css'
@@ -8,6 +9,9 @@ import '.././Glightboxmin.css'
 
 
 const ServicesSection = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div id="services" className="section">
       <div className="top-icon-box position-relative">

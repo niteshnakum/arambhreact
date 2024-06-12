@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 import '.././Style.css'
 import '.././Bootstrapmin.css'
 import '.././Bootstrap-icons.css'
@@ -7,6 +8,9 @@ import '.././Glightboxmin.css'
 import newImage from './s1.png';
 
 const AboutSection = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section id="about" className="about">
       <div className="container" data-aos="fade-up">

@@ -202,8 +202,12 @@
 
 import React, { useState, forwardRef } from 'react';
 import { Element } from 'react-scroll';
+import { useEffect } from 'react';
 
 const ContactSection = forwardRef((props, ref) => {
+    useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -255,7 +259,7 @@ const ContactSection = forwardRef((props, ref) => {
                     <div className="single-contact-info-box">
                       <div className="contact-info">
                         <h6>Phone:</h6>
-                        <p>+7014935101</p>
+                        <p>+91-7014935101</p>
                       </div>
                     </div>
                   </div>

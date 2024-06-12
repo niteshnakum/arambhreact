@@ -1,5 +1,5 @@
 /* Style.css */
-.header {
+/* .header {
     background-color: transparent; 
     transition: background-color 0.5s ease; 
   }
@@ -10,28 +10,28 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-  }
+  } */
   
  /* Navbar.css */
 
 /* Default styling for navbar items */
-.navbar ul li a {
-    color: white; /* Set the default text color to black */
-  }
+/* .navbar ul li a {
+    color: white; 
+  } */
   
   /* Styling for navbar items after scrolling */
-  .header.sticked.sticky-menu .navbar ul li a {
-    color: black; /* Change text color to white when navbar is scrolled */
-  }
+  /* .header.sticked.sticky-menu .navbar ul li a {
+    color: black; 
+  } */
   
-  .sticky-menu {
+  /* .sticky-menu {
     background-color: white; 
-  }
+  } */
   
   
 
 
-  @media (min-width: 992px) {
+  /* @media (min-width: 992px) {
     .mobile-nav-toggle {
       display: none;
     }
@@ -39,10 +39,10 @@
     .navbar-mobile {
       display: none;
     }
-  }
+  } */
   
   /* Mobile Navigation Styles */
-  .navbar-mobile {
+  /* .navbar-mobile {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -50,13 +50,15 @@
     top: 0;
     left: 0;
     width: 100%;
-    /* height: 100vh; */
+    
     background: #fff;
     z-index: 99;
     padding: 15px;
-  }
+  } */
+
+  /* height: 100vh; */
   
-  .navbar-mobile ul {
+  /* .navbar-mobile ul {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -96,7 +98,114 @@
     .mobile-nav-toggle.bi-x {
       display: block;
     }
-  }  
+  }   */
   
   
-  
+  /* Style.css */
+.header {
+  background-color: transparent; 
+  transition: background-color 0.5s ease;
+}
+
+.sticked {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.sticked.sticky-menu {
+  background-color: white; /* Background color when scrolled */
+}
+
+/* Navbar.css */
+
+/* Default styling for navbar items */
+.navbar ul li a {
+  color: white; /* Set the default text color to white */
+  text-decoration: none; /* Remove underline */
+  padding: 10px;
+}
+
+/* Styling for active navbar items */
+/* .navbar ul li a.active {
+  border-bottom: 2px solid black; 
+} */
+
+/* Styling for navbar items after scrolling */
+.header.sticked.sticky-menu .navbar ul li a {
+  color: black; /* Change text color to black when navbar is scrolled */
+}
+
+/* .header.sticked.sticky-menu .navbar ul li a.active {
+  border-bottom: 2px solid black;
+} */
+
+/* Mobile Navigation Styles */
+.navbar-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 99;
+  padding: 15px;
+}
+
+.navbar-mobile ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.navbar-mobile ul li {
+  width: 100%;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.mobile-nav-toggle {
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 100;
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  .navbar {
+      display: none;
+  }
+
+  .navbar-mobile {
+      display: block;
+  }
+
+  .mobile-nav-show {
+      display: inline-block;
+  }
+
+  .mobile-nav-hide {
+      display: none;
+  }
+
+  .mobile-nav-toggle.bi-x {
+      display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .mobile-nav-toggle {
+      display: none;
+  }
+
+  .navbar-mobile {
+      display: none;
+  }
+}
+
+
