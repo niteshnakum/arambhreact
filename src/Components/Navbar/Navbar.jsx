@@ -102,7 +102,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import './Navbar.css';
+ import './Navbar.css';
+//import '.././Style.css'
 import '../Bootstrapmin.css';
 import '../Bootstrap-icons.css';
 import '../Glightboxmin.css';
@@ -162,15 +163,28 @@ const Navbar = () => {
     }
 
     if (hash) {
-      const section = document.querySelector(hash);
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-      }
-      setActiveLink(hash);
+      setTimeout(() => {
+        const section = document.querySelector(hash);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+        setActiveLink(hash);
+      }, 100);
     } else {
       setActiveLink(pathname === '/' ? '#hero' : '');
     }
   }, [location]);
+
+  //  if (hash) {
+  //     const section = document.querySelector(hash);
+  //     if (section) {
+  //       section.scrollIntoView({ behavior: 'smooth' });
+  //     }
+  //     setActiveLink(hash);
+  //   } else {
+  //     setActiveLink(pathname === '/' ? '#hero' : '');
+  //   }
+  // }, [location]);
 
   const toggleMobileNav = (event) => {
     event.preventDefault();
@@ -180,7 +194,7 @@ const Navbar = () => {
   return (
     <header id="header" className={`header d-flex align-items-center ${isScrolled ? 'sticked sticky-menu' : 'sticked'}`}>
       <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
-        <Link to="/" className="logo d-flex align-items-center">
+        <Link to="/#hero" className="logo d-flex align-items-center">
           <h1>Arambh<span>Technologies</span></h1>
         </Link>
         <nav id="navbar" className={`navbar ${isMobileNavVisible ? 'navbar-mobile' : ''}`}>
